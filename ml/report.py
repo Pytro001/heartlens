@@ -155,7 +155,7 @@ def write_report(meta):
     err = max(t["onnx_max_abs_err"] for t in meta["targets"])
     md = f"""# HeartLens: coronary risk on a 3D heart
 
-**Konstantin Saifoulline.** Multimodal AI Hackathon 2026, Track A (Cardiovascular Risk Visualization and Prediction). Code: [REPO]. MIT licence.
+**Konstantin Saifoulline.** Multimodal AI Hackathon 2026, Track A (Cardiovascular Risk Visualization and Prediction). Code: https://github.com/Pytro001/heartlens. MIT licence.
 
 > Decision support research prototype. Not a medical device. All results are internal cross-validation on 303 patients from one centre.
 

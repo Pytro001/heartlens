@@ -10,7 +10,7 @@ Manage page: https://devpost.com/submit-to/31481-multimodal-ai-hackathon-2026/ma
 - **Team name**: Konstantin Saifoulline
 - **Team members**: Konstantin Saifoulline (solo, real full name)
 - **Team leader email**: [EMAIL]
-- **GitHub repository**: [REPO] (public, MIT licence; planned URL https://github.com/Pytro001/heartlens)
+- **GitHub repository**: https://github.com/Pytro001/heartlens (public, MIT licence; planned URL https://github.com/Pytro001/heartlens)
 - **Live demo**: [DEMO] (static build of `web/dist`, GitHub Pages)
 - **Video** (YouTube, 3 to 10 min, unlisted OK): [VIDEO]
 - **Documentation** (max 6 pages): `docs/HeartLens_Report.pdf` in the repo (4 pages)
@@ -98,7 +98,7 @@ python, scikit-learn, xgboost, shap, pandas, numpy, onnx, onnxruntime, onnxrunti
 
 ## Links
 
-- Repo: [REPO]
+- Repo: https://github.com/Pytro001/heartlens
 - Video: [VIDEO]
 - Live demo: [DEMO]
 
@@ -108,4 +108,4 @@ python, scikit-learn, xgboost, shap, pandas, numpy, onnx, onnxruntime, onnxrunti
 - [x] docs/HeartLens_Report.pdf (4 pages, max 6)
 - [ ] Video 3 to 10 min, English audio (screen film is 4:40; record voice and face over it)
 - [x] Disclaimer visible in the UI on every screen
-- [ ] Push repo public, publish `web/dist`, fill [REPO], [DEMO], [VIDEO], [EMAIL]
+- [ ] Push repo public, publish `web/dist`, fill https://github.com/Pytro001/heartlens, [DEMO], [VIDEO], [EMAIL]
