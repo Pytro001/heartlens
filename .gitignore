@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+web/node_modules/
+web/dist/
+.env
+.DS_Store
+artifacts_train.log
+output/record.log
+output/stills/t-*.jpg
+artifacts/*.npy

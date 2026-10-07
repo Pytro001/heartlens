@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HeartLens</title>
+  <meta name="description" content="HeartLens: coronary artery disease and per vessel stenosis prediction on an interactive 3D heart, with SHAP explanations. Research prototype, not a medical device." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 28S3 20 3 11a6.5 6.5 0 0 1 13-1.5A6.5 6.5 0 0 1 29 11c0 9-13 17-13 17z' fill='%23ff5a5f'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div id="banner" role="note"><strong>Decision support research prototype. Not a medical device.</strong> <span>Predictions come from 303 patients at one centre and are not validated externally. Do not use for diagnosis or treatment.</span></div>
+  <header id="top">
+    <div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28S3 20 3 11a6.5 6.5 0 0 1 13-1.5A6.5 6.5 0 0 1 29 11c0 9-13 17-13 17z"/></svg>HeartLens</div>
+    <nav role="tablist" aria-label="Views">
+      <button role="tab" id="tab-patient" data-view="patient" aria-selected="true">Patient</button>
+      <button role="tab" id="tab-evidence" data-view="evidence" aria-selected="false">Model evidence</button>
+      <button role="tab" id="tab-arch" data-view="arch" aria-selected="false">How it works</button>
+      <button role="tab" id="tab-limits" data-view="limits" aria-selected="false">Limitations</button>
+    </nav>
+    <div id="perf" aria-live="polite"></div>
+  </header>
+  <main id="app">
+    <aside id="left" aria-label="Patient and what-if inputs"></aside>
+    <section id="stage" aria-label="3D heart">
+      <div id="gl"></div>
+      <svg id="leaders" aria-hidden="true"></svg>
+      <div id="labels"></div>
+      <div id="stage-hint">Drag to orbit. Click an artery.</div>
+    </section>
+    <aside id="right" aria-label="Predictions and explanations"></aside>
+    <section id="overlay" hidden></section>
+  </main>
+  <div id="caption" aria-hidden="true"></div>
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="loading">Loading anatomy and models</div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
